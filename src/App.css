@@ -1,0 +1,94 @@
+/* Reset and global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #00d8ff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4%;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo span {
+  color: #00d8ff;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Hero section */
+.hero {
+  flex: 1;
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to right, #121212, #1f1f1f);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: #00d8ff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+/* Call to action button */
+.cta {
+  background-color: #00d8ff;
+  border: none;
+  color: #000;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+  background-color: #00c0e0;
+}
